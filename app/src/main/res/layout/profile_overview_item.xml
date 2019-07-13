@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/nav_header_vertical_spacing"
+    android:orientation="vertical">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/inner_image_view"
+            android:layout_width="@dimen/icon_height"
+            android:layout_height="@dimen/icon_height"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_profile"
+            app:civ_border_color="@color/andela_blue"
+            app:civ_border_width="@dimen/divider_height"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="@dimen/none"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/inner_image_view"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/header_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/text_view"
+                style="@style/Title"/>
+
+            <TextView
+                android:id="@+id/value_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/text_view"
+                style="@style/TextViews"/>
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <View style="@style/divider_light"/>
+
+</LinearLayout>

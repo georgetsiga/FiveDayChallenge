@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3359DF</color>
+    <color name="colorPrimaryDark">#071C68</color>
+    <color name="colorAccent">@color/pluralsight_orange</color>
+    <color name="pluralsight_orange">#F05A28</color>
+    <color name="custom_orange">#F38430</color>
+    <color name="andela_blue">#3359DF</color>
+    <color name="andela_grey">#86878A</color>
+    <color name="text_grey">#eff0f1</color>
+    <color name="text_red">#D61818</color>
+
+    <color name="text_dark">#444444</color>
+</resources>
