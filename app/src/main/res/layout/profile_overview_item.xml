@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="@dimen/nav_header_vertical_spacing"
+    android:layout_marginStart="@dimen/button_inner_padding"
+    android:layout_marginEnd="@dimen/nav_header_vertical_spacing"
+    android:layout_marginBottom="@dimen/nav_header_vertical_spacing"
+    android:elevation="4dp"
+    app:cardCornerRadius="10dp"
     android:orientation="vertical">
 
 
@@ -12,13 +17,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
+        android:padding="@dimen/activity_horizontal_margin"
         android:orientation="horizontal">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/inner_image_view"
             android:layout_width="@dimen/icon_height"
             android:layout_height="@dimen/icon_height"
-            android:layout_marginBottom="8dp"
             android:layout_marginStart="8dp"
             android:src="@drawable/ic_profile"
             app:civ_border_color="@color/andela_blue"
@@ -58,6 +63,4 @@
 
     </android.support.constraint.ConstraintLayout>
 
-    <View style="@style/divider_light"/>
-
-</LinearLayout>
+</android.support.v7.widget.CardView>

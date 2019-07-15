@@ -21,7 +21,7 @@
 
     <style name="Title" parent="@android:style/TextAppearance.Material.Medium">
         <item name="android:textColor">@color/text_dark</item>
-        <item name="android:layout_marginTop">@dimen/nav_header_vertical_spacing</item>
+        <item name="android:layout_marginTop">@dimen/button_inner_padding</item>
         <item name="android:textSize">@dimen/title_text_size</item>
         <item name="android:alpha">0.87</item>
     </style>
@@ -33,7 +33,7 @@
 
     <style name="TextViews" parent="@android:style/TextAppearance.Material.Medium">
         <item name="android:textColor">@color/andela_grey</item>
-        <item name="android:layout_marginTop">@dimen/nav_header_vertical_spacing</item>
+        <item name="android:layout_marginTop">@dimen/button_inner_padding</item>
         <item name="android:alpha">0.87</item>
     </style>
 
@@ -52,6 +52,15 @@
         <item name="android:layout_height">@dimen/divider_height</item>
         <item name="android:layout_marginTop">@dimen/nav_header_vertical_spacing</item>
         <item name="android:layout_marginBottom">@dimen/nav_header_vertical_spacing</item>
+        <item name="android:alpha">0.12</item>
+    </style>
+
+    <style name="divider_light_vertical" parent="AppTheme">
+        <item name="android:background">@android:color/black</item>
+        <item name="android:layout_width">@dimen/divider_height</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginStart">@dimen/nav_header_vertical_spacing</item>
+        <item name="android:layout_marginEnd">@dimen/nav_header_vertical_spacing</item>
         <item name="android:alpha">0.12</item>
     </style>
 
