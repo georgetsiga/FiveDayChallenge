@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -21,6 +22,7 @@ public class MyProfileActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.d(TAG, "onCreate called");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_profile);
         ButterKnife.bind(this);
@@ -35,6 +37,7 @@ public class MyProfileActivity extends AppCompatActivity {
 
     private void loadProfile() {
         LinearLayout layoutContent = findViewById(R.id.layoutContent);
+        layoutContent.removeAllViews();
         if (getIntent() == null || getIntent().getExtras() == null) {
             ProfileOverviewItemWidget errorWidget = new ProfileOverviewItemWidget(this);
             errorWidget.display(this, R.drawable.ic_error_black_24dp, R.color.text_red, R.string.error, ERROR);
@@ -42,7 +45,6 @@ public class MyProfileActivity extends AppCompatActivity {
             return;
         }
 
-        layoutContent.removeAllViews();
         MyProfile myProfile = getIntent().getExtras().getParcelable(MY_PROFILE);
         if (myProfile == null) {
             ProfileOverviewItemWidget errorWidget = new ProfileOverviewItemWidget(this);
